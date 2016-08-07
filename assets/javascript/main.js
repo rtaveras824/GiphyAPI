@@ -33,21 +33,19 @@ function createButton(text) {
 	var g = colorValues[1];
 	var b = colorValues[2];
 
-	var value = 100;
-
 	var btn = $("<button>");
+
+	//trying to detect if background color is dark, not good
 	var luma = 0.2126 * r + 0.7152 * g + 0.0722 * b;
 	var brightness = (r + b + g)/3;
-	//trying to detect if background color is dark, not good
 	if (luma < 30)
 		btn.css("color", "white");
 
-		btn.addClass("btn btn-default searchBtn")
-			.text(text)
-			.appendTo(".buttonsHere")
-			.css("background", "rgb(" + colorValues[0] + ", " + colorValues[1] + ", " + colorValues[2] + ")");
+	btn.addClass("btn btn-default searchBtn")
+		.text(text)
+		.appendTo(".buttonsHere")
+		.css("background", "rgb(" + r + ", " + g + ", " + b + ")");
 
-		
 }
 
 //when submit is pressed or enter key hit
@@ -177,6 +175,8 @@ function openModal() {
 	var rating = $(this).attr("data-rating");
 	$(".modal-title").html("ID: " + id + ", Rating: " + rating);
 	$(".modal_img").attr("src", url);
+	
+	//open modal window
 	$("#myModal").modal("toggle");
 }
 
