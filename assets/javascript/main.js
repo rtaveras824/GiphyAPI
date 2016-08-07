@@ -71,7 +71,7 @@ function fetchGiphy() {
 	//$(this) refers to the button clicked
 	//set search term to button text
 	q = $(this).text();
-	url = "http://api.giphy.com/v1/gifs/search?"
+	url = "https://api.giphy.com/v1/gifs/search?"
 	//Jquery param function parses object into string for url
 	url += $.param({
 		'q': q,
