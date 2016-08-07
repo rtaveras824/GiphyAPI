@@ -1,0 +1,61 @@
+body {
+	background: black;
+}
+
+.fluid-container {
+	margin-bottom: 20px;
+}
+
+.buttonsHere {
+	margin-top: 10px;
+}
+
+.btn {
+	color: black;
+}
+
+.form-inline {
+	margin: 10px 0;
+}
+
+.gifsHere {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.item {
+	float: left;
+	width: 200px;
+	height: 200px;
+}
+
+.gif {
+	width: 200px;
+	height: 200px;
+	background-position: center;
+	/* Make the background image cover the area of the <div>, and clip the excess */
+	background-size: cover;
+}
+
+.width2 {
+	width: 400px;
+}
+
+.height2 {
+	height: 400px;
+}
+
+.btn {
+	font-size: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .item {
+        width: 200px;
+		height: 200px;
+    }
+    .gif {
+    	width: 200px;
+		height: 200px;
+    }
+}
